@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso CSS</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="conteiner">
+            <a class="logo" ref="#">Code<span>Flow</span></a>
+            
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Abrir Navegação">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Fechar Navegação">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Funcionalidades</a></li>
+                    <li><a href="#">Preços</a></li>
+
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="current"><a href="#">Contato</a></li>
+                    <li class="go-premium-cta"><a href="#">Seja Premium</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+    
+    <section class="hero">
+        <div class="conteiner">
+            <div class="left-col">
+                <p class="subhead">Web Design &amp; Tecnologia</p>
+                <h1>A task App Doesn't Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta"> Nosso Portfolio </a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Assista o Vídeo">Saiba Mais</a>
+                </div>
+            </div>
+
+            <img src="images/illustration.svg" class="hero-img" alt="">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="conteiner">
+            <ul class="features-list">
+                <li>Ferramentas de Desenvolvimento Web</li>
+                <li>Gerenciamento de Websites</li>
+                <li>Integração Website e Google Ads</li>
+                <li>Criação de sites E-commerce</li>
+                <li>Desnevolvimento de Aplicações</li>
+            </ul>
+            <img src="images/holding-phone.jpg" alt="Homem segurando celular">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <ul>
+            <li>
+                <img src="images/person.jpg" alt="Pessoa">
+                <blockquote>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, eaque.</blockquote>
+                <cite>- Max Teixeira</cite>
+            </li>
+            <li>
+                <img src="images/person.jpg" alt="Pessoa">
+                <blockquote>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, eaque.</blockquote>
+                <cite>- Max Teixeira</cite>
+            </li>
+            <li>
+                <img src="images/person.jpg" alt="Pessoa">
+                <blockquote>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, eaque.</blockquote>
+                <cite>- Max Teixeira</cite>
+            </li>
+
+        </ul>
+    </section>
+
+    <section class="contact-section">
+        <div class="conteiner">
+            <div class="contact-left">
+                <h2>Entre em contato Conosco!</h2>
+                <form action="">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" >
+                      
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                    <input type="enviar" class="send-message-cta" value="Enviar Mensagem">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1728.0949602976257!2d-50.123154591736046!3d-29.97397144547704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xac02d4a7a45939bd!2sImb%C3%A9verly%20Hills%20Club!5e0!3m2!1spt-BR!2sbr!4v1613945474791!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+        })
+
+    </script>
+</body>
+</html>
