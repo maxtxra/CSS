@@ -265,6 +265,9 @@ nav {
                 }
             }
         }
+        input[type='enviar'] {
+            width: 25%;
+        }
 }
 
 @media only screen and(min-width: 1080px) {
@@ -277,6 +280,9 @@ nav {
     section {
         padding: 10em 4em;
 
+    }
+    input[type='enviar'] {
+        width: 20%;
     }
     .hero .conteiner {
         display: flex;

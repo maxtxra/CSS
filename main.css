@@ -284,6 +284,9 @@ nav li a:hover {
     background: var(--primary-color);
     color: white;
   }
+  input[type='enviar'] {
+    width: 25%;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -293,6 +296,9 @@ nav li a:hover {
   }
   section {
     padding: 10em 4em;
+  }
+  input[type='enviar'] {
+    width: 20%;
   }
   .hero .conteiner {
     display: -webkit-box;
