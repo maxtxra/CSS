@@ -20,9 +20,11 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 1001;
+    
 }
 .disapear{
-    animation: vanish 5s forwards;
+    animation: vanish 6s forwards;
+    
 }
 @keyframes vanish{
     100%{

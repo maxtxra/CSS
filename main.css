@@ -29,8 +29,8 @@ body {
 }
 
 .disapear {
-  -webkit-animation: vanish 5s forwards;
-          animation: vanish 5s forwards;
+  -webkit-animation: vanish 6s forwards;
+          animation: vanish 6s forwards;
 }
 
 @-webkit-keyframes vanish {
