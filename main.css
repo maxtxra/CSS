@@ -9,6 +9,44 @@ body {
   font-family: 'Poppins';
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: whitesmoke;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1001;
+}
+
+.disapear {
+  -webkit-animation: vanish 5s forwards;
+          animation: vanish 5s forwards;
+}
+
+@-webkit-keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .navbar {
   background: white;
   padding: 1em;
@@ -66,7 +104,7 @@ section {
 }
 
 .left-col h1 {
-  font-size: 2.6em;
+  font-size: 2.2em;
   line-height: 1.3em;
   margin-top: .2em;
 }
